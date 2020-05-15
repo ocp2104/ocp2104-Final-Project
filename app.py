@@ -13,16 +13,15 @@ app = Flask(__name__)
 
 #static route
 @app.route("/")
-def hello():
+def homePage():
     return render_template("index.html")
-    #return "Hello World!"
     
 @app.route("/assignments")
-def secondWebpage():
+def assignmentPage():
     return render_template("assignments.html")
 
 @app.route("/classes")
-def lastWebpage():
+def classesPage():
     return render_template("classes.html")
 
 
